@@ -23,15 +23,15 @@ exports.up = function (knex) {
  */
 exports.down = function (knex) {
   return knex.schema.alterTable("flight_data", function (table) {
-    table.setNullable("reg_number", 32).alter();
-    table.setNullable("flight_number", 10).alter();
-    table.setNullable("flight_icao", 10).alter();
-    table.setNullable("flight_iata", 10).alter();
-    table.setNullable("dep_icao", 4).alter();
-    table.setNullable("dep_iata", 3).alter();
-    table.setNullable("updated", 20).alter();
-    table.setNullable("airline_icao", 3).alter();
-    table.setNullable("airline_iata", 2).alter();
-    table.setNullable("status", 20).alter();
+    table.setNullable("reg_number", 32);
+    table.setNullable("flight_number", 10);
+    table.setNullable("flight_icao", 10);
+    table.setNullable("flight_iata", 10);
+    table.setNullable("dep_icao", 4);
+    table.setNullable("dep_iata", 3);
+    table.setNullable("updated", 20);
+    table.setNullable("airline_icao", 3);
+    table.setNullable("airline_iata", 2);
+    table.setNullable("status", 20);
   });
 };
