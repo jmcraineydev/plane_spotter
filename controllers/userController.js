@@ -11,4 +11,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:username", async (req, res) => {
+  const { username } = req.params;
+  try {
+    const user = await db("users")
+      .select("*")
+      .where("user_name", username)
+      .timeout(1500);
+    res.send(user).status(204);
+  } catch (err) {
+    res.send(err).status(404);
+  }
+});
+
 module.exports = router;
