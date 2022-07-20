@@ -35,4 +35,24 @@ router.patch("/:username", async (req, res) => {
   }
 });
 
+router.post("/", async (req, res) => {
+  const newUser = req.body;
+  try {
+    await db("users").insert(newUser);
+    res.status(204).end();
+  } catch (err) {
+    res.send(err).status(400);
+  }
+});
+
+router.delete("/:username", async (req, res) => {
+  const { username } = req.params;
+  try {
+    await db("users").where("user_name", username).del().timeout(1500);
+    res.status(204).end();
+  } catch (err) {
+    res.send(err).status(404);
+  }
+});
+
 module.exports = router;
