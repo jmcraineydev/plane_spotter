@@ -24,4 +24,15 @@ router.get("/:username", async (req, res) => {
   }
 });
 
+router.patch("/:username", async (req, res) => {
+  const { username } = req.params;
+  const edits = req.body;
+  try {
+    await db("users").where("user_name", username).update(edits);
+    res.status(204).end();
+  } catch (err) {
+    res.send(err).status(404);
+  }
+});
+
 module.exports = router;
