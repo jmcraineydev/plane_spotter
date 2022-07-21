@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const db = require("../db/knex");
+const bcrypt = require("bcryptjs");
+
+const salt = bcrypt.genSalt(11);
 
 router.get("/", async (req, res) => {
   try {
@@ -36,7 +39,17 @@ router.patch("/:username", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const newUser = req.body;
+  const newUser = {
+    user_name: req.body.user_name,
+    email: req.body.email,
+    password: bcrypt.hashSync(req.body.password, 10),
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    city: req.body.city,
+    postal_code: req.body.postal_code,
+    country: req.body.country,
+    region: req.body.region,
+  };
   try {
     await db("users").insert(newUser);
     res.status(204).end();
