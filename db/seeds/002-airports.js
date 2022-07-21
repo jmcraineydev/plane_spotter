@@ -14,7 +14,6 @@ exports.seed = async function (knex) {
         continue;
       }
       await knex("airports").insert(airport);
-      id++;
     }
   } catch (err) {
     console.log(err);
