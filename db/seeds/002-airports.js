@@ -9,9 +9,7 @@ exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex("airports").del();
   try {
-    let id = 1;
     for (const airport of airportsData) {
-      airport.id = id;
       if (!airport.iata_code) {
         continue;
       }
