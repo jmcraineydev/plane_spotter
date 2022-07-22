@@ -28,8 +28,22 @@ router.get("/:username", async (req, res) => {
   const { username } = req.params;
   try {
     const user = await db("planes_users_follow")
-      .select("*")
       .where("user_name", username)
+      .from("flight_data")
+      .join(
+        "planes_users_follow",
+        "flight_data.reg_number",
+        "=",
+        "planes_users_follow.plane_reg"
+      )
+      .select(
+        "airline_iata",
+        "reg_number",
+        "flag",
+        "speed",
+        "arr_iata",
+        "status"
+      )
       .timeout(1500);
     res.send(user).status(204);
   } catch (err) {
