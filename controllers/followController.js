@@ -41,6 +41,8 @@ router.get("/:username", async (req, res) => {
         "reg_number",
         "flag",
         "speed",
+        "alt",
+        "dir",
         "arr_iata",
         "status"
       )
