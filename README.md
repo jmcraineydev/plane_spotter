@@ -1,6 +1,4 @@
-# Plane Spotter
-
-![airplane icon](./public/planeiconnobg.png)
+![airplane icon](./public/planeiconnobg.png) # Plane Spotter
 
 _This is being created during my time as a student at Code Chrysalis, and is currently under initial development_
 
