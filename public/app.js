@@ -27,8 +27,6 @@ function loadResults(data) {
 }
 
 function clearQuery() {
-  const query = document.getElementById("query_result");
-  const flights = document.getElementsByClassName("flights");
-  query.removeChild();
-  document.querySelector("#username").reset();
+  document.getElementById("query_results").innerHTML = "";
+  document.getElementById("userInput").reset();
 }
