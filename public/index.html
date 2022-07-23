@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
     <title>PLANE SPOTTER</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
       </p>
     </section>
     <h2>Get status of planes I'm tracking</h2>
-    <form action="">
+    <form class="userInput" id="userInput" onsubmit="submitEvent(event)">
       <label for="username">User Name: </label>
       <input
         type="text"
@@ -24,9 +25,12 @@
         id="username"
         placeholder="enter user name"
       />
-      <button type="submit">TRACK NOW</button>
+      <input type="submit" id="track_planes" value="TRACK NOW" />
+      <button type="reset" id="reset" onclick="clearQuery()">Clear</button>
     </form>
+    <section id="query_results"></section>
 
     <footer><p>Aircraft data powered by AirLabs.co</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
