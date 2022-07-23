@@ -75,6 +75,7 @@ input {
 }
 
 #query_results {
+  margin: 2rem;
   height: 50vh;
   overflow: scroll;
 }
