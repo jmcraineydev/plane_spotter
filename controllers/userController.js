@@ -18,7 +18,16 @@ router.get("/:username", async (req, res) => {
   const { username } = req.params;
   try {
     const user = await db("users")
-      .select("*")
+      .select(
+        "user_name",
+        "email",
+        "first_name",
+        "last_name",
+        "city",
+        "postal_code",
+        "country",
+        "region"
+      )
       .where("user_name", username)
       .timeout(1500);
     res.send(user).status(204);
