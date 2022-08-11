@@ -46,7 +46,7 @@ router.get("/:username", async (req, res) => {
         "arr_iata",
         "status"
       )
-      .timeout(1500);
+      .timeout(15000);
     res.send(user, "This is a test").status(204);
   } catch (err) {
     res.send(err).status(404);
