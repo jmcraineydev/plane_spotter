@@ -3,6 +3,7 @@ require("dotenv").config();
 module.exports = {
   client: "pg",
   connection: process.env.DATABASE_URL || process.env.DB_URL_LOCAL,
+  ssl: { rejectUnauthorized: false },
   searchPath: "public",
   migrations: {
     tableName: "knex_migrations",
