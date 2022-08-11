@@ -1,0 +1,46 @@
+[
+  {
+    "user_name": "johnny45",
+    "email": "john1945@example.com",
+    "first_name": "John",
+    "last_name": "Smith",
+    "city": "Houston",
+    "password": "heater",
+    "postal_code": "12345",
+    "country": "USA",
+    "region": "Americas"
+  },
+  {
+    "user_name": "pam57",
+    "email": "Feathers@example.com",
+    "first_name": "Pamela",
+    "last_name": "Feathers",
+    "city": "Miami",
+    "password": "sweaters",
+    "postal_code": "34512",
+    "country": "USA",
+    "region": "Americas"
+  },
+  {
+    "user_name": "pilot787",
+    "email": "luv2FLY@example.com",
+    "first_name": "Fred",
+    "last_name": "Simpson",
+    "city": "Tokyo",
+    "password": "shorts",
+    "postal_code": "323-5126",
+    "country": "JP",
+    "region": "Asia"
+  },
+  {
+    "user_name": "ShuttlePilot",
+    "email": "homeinstars@example.com",
+    "first_name": "Glenn",
+    "last_name": "Johnson",
+    "city": "London",
+    "password": "flippyfloppy",
+    "postal_code": "WC2N 5DU",
+    "country": "GB",
+    "region": "Europe"
+  }
+]
