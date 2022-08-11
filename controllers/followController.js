@@ -47,7 +47,7 @@ router.get("/:username", async (req, res) => {
         "status"
       )
       .timeout(15000);
-    res.send(user, "This is a test").status(204);
+    res.send(user).status(200);
   } catch (err) {
     res.send(err).status(404);
   }
