@@ -13,7 +13,9 @@ exports.seed = async function (knex) {
       if (!airport.iata_code) {
         continue;
       }
-      await knex("airports").insert(airport);
+      if (airport.country_code === "US" || airport.country_code === "JP") {
+        await knex("airports").insert(airport);
+      }
     }
   } catch (err) {
     console.log(err);
