@@ -11,8 +11,8 @@
     "region": "Americas"
   },
   {
-    "user_name": "Feathers@example.com",
-    "email": "Feathers@example.com",
+    "user_name": "feathers@example.com",
+    "email": "feathers@example.com",
     "first_name": "Pamela",
     "last_name": "Feathers",
     "city": "Miami",
@@ -22,8 +22,8 @@
     "region": "Americas"
   },
   {
-    "user_name": "luv2FLY@example.com",
-    "email": "luv2FLY@example.com",
+    "user_name": "luv2fly@example.com",
+    "email": "luv2fly@example.com",
     "first_name": "Fred",
     "last_name": "Simpson",
     "city": "Tokyo",
