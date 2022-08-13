@@ -51,13 +51,14 @@ router.post("/", async (req, res) => {
   const newUser = {
     user_name: req.body.user_name,
     email: req.body.email,
-    password: bcrypt.hashSync(req.body.password, 10),
-    first_name: req.body.first_name,
-    last_name: req.body.last_name,
-    city: req.body.city,
-    postal_code: req.body.postal_code,
-    country: req.body.country,
-    region: req.body.region,
+    // password: bcrypt.hashSync(req.body.password, 10)|| "placeholdertext",
+    // first_name: req.body.first_name ,
+    // last_name: req.body.last_name ,
+    // city: req.body.city ,
+    // postal_code: req.body.postal_code ,
+    // country: req.body.country ,
+    // region: req.body.region ,
+    uid: req.body.uid,
   };
   try {
     await db("users").insert(newUser);
