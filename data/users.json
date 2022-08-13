@@ -1,46 +1,19 @@
 [
   {
     "user_name": "john1945@example.com",
-    "email": "john1945@example.com",
-    "first_name": "John",
-    "last_name": "Smith",
-    "city": "Houston",
-    "password": "heater",
-    "postal_code": "12345",
-    "country": "USA",
-    "region": "Americas"
+    "email": "john1945@example.com"
   },
   {
     "user_name": "feathers@example.com",
-    "email": "feathers@example.com",
-    "first_name": "Pamela",
-    "last_name": "Feathers",
-    "city": "Miami",
-    "password": "sweaters",
-    "postal_code": "34512",
-    "country": "USA",
-    "region": "Americas"
+    "email": "feathers@example.com"
   },
   {
     "user_name": "luv2fly@example.com",
     "email": "luv2fly@example.com",
-    "first_name": "Fred",
-    "last_name": "Simpson",
-    "city": "Tokyo",
-    "password": "shorts",
-    "postal_code": "323-5126",
-    "country": "JP",
-    "region": "Asia"
+    "uid": "IGm4abWE6fXzL5YKkC641zmZden1"
   },
   {
     "user_name": "homeinstars@example.com",
-    "email": "homeinstars@example.com",
-    "first_name": "Glenn",
-    "last_name": "Johnson",
-    "city": "London",
-    "password": "flippyfloppy",
-    "postal_code": "WC2N 5DU",
-    "country": "GB",
-    "region": "Europe"
+    "email": "homeinstars@example.com"
   }
 ]

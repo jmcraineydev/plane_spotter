@@ -20,13 +20,13 @@ router.get("/:username", async (req, res) => {
     const user = await db("users")
       .select(
         "user_name",
-        "email",
-        "first_name",
-        "last_name",
-        "city",
-        "postal_code",
-        "country",
-        "region"
+        "email"
+        // "first_name",
+        // "last_name",
+        // "city",
+        // "postal_code",
+        // "country",
+        // "region"
       )
       .where("user_name", username)
       .timeout(1500);
